@@ -40,24 +40,16 @@
                             Home
                         </a>
                     </li>
-                    <?php if (!empty($_SESSION['user']) && !empty($_SESSION['user']['id_pelanggan'])): ?>
-                        <li>
-                            <a href="?menu=keranjang" class="nav-link text-white">
-                                <i class="bi bi-bag-heart-fill d-block mx-auto mb-1 text-center"></i>
-                                Keranjang
-                            </a>
-                        </li>
-                        <li>
-                            <a href="?menu=pesanan" class="nav-link text-white">
-                                <i class="bi bi-cart-fill d-block mx-auto mb-1 text-center"></i>
-                                Pesanan
-                            </a>
-                        </li>
-                    <?php endif; ?>
                     <li>
                         <a href="?menu=produk" class="nav-link text-white">
                             <i class="bi bi-grid-fill d-block mx-auto mb-1 text-center"></i>
                             Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="?menu=About" class="nav-link text-white">
+                            <i class="bi bi-grid-fill d-block mx-auto mb-1 text-center"></i>
+                            About Us
                         </a>
                     </li>
                     <?php if (!empty($_SESSION['user']) && empty($_SESSION['user']['id_pelanggan'])): ?>

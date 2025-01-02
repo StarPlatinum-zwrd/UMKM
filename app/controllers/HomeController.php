@@ -15,7 +15,8 @@ class HomeController
     const VALID_MENU = [
         'produk',
         'keranjang',
-        'pesanan'
+        'pesanan',
+        'About' // Tambahkan ini
     ];
 
     const DEFAULT_MENU = 'home';

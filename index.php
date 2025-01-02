@@ -20,23 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Handle addKeranjang action
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['aksi']) && $_POST['aksi'] === 'addKeranjang') {
-        $data = $_POST;
-        $result = $cHome->tambahKeranjang($data);
-        //jika terdapat error
-        if (!array_key_exists('icon', $result) && !array_key_exists('message', $result) && !empty($result)) {
-            $errors = $result; // simpan error
-        } else {
-            unset($_POST);
-            $_SESSION['icon_message'] = $result['icon'];
-            $_SESSION['message'] = $result['message'];
-            header("Location: ./");
-            exit;
-        }
-    }
-}
 ?>
 
 <!DOCTYPE html>

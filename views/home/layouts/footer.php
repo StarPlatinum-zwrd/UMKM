@@ -10,12 +10,24 @@
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><i
-              class="bi bi-twitter"></i></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><i
-              class="bi bi-instagram"></i></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><i
-              class="bi bi-facebook"></i></a></li>
-    </ul>
+  <li class="ms-3">
+    <a class="text-body-secondary" href="https://www.instagram.com/your-instagram-profile" target="_blank">
+      <svg class="bi" width="24" height="24">
+        <i class="bi bi-instagram"></i>
+      </svg>
+    </a>
+  </li>
+  <li class="ms-3">
+    <a class="text-body-secondary" href="https://gofood.link/your-gofood-link" target="_blank">
+      <img src="https://img.icons8.com/color/24/000000/uber-eats.png" alt="GoFood">
+    </a>
+  </li>
+  <li class="ms-3">
+    <a class="text-body-secondary" href="https://shopee.co.id/your-shopee-food-link" target="_blank">
+      <img src="https://img.icons8.com/color/24/000000/shopee.png" alt="Shopee Food">
+    </a>
+  </li>
+</ul>
+
   </footer>
 </div>

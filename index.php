@@ -116,9 +116,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <input type="hidden" name="id_produk" id="modal-product-id"></input>
                             <?php if (isset($_SESSION['user'])): ?>
                                 <div class="social-icons-container">
-                                <span class="bg-success" style="margin-right: 20px; display: inline-block; cursor: pointer;">
+                                <p class="bg-success" style="margin-right: 20px; display: inline-block; font-weight: bold; color: white;">
                                     <i class="bi bi-cart-plus-fill me-1"></i> Mulai Pembelian DI
-                                </span>
+                                </p>
                                     <a class="social-icon" href="https://gofood.co.id/banjarmasin/restaurant/rindu-pokat-banjarmasin-utara-sungaiandai-d76ef6b8-b294-41f7-84e4-d6b35fc56290" target="_blank">
                                         <img class="socialIcon image-block" src="assets/images/gofood-icon.png" alt="Gofood" style="width:50px; height:auto; border:2px solid #ccc; margin-right: 20px; background: #ccc;">
                                     </a>

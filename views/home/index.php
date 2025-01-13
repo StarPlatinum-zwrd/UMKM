@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container" style="background-color: aliceblue;">
     <!-- Produk Terbaru ditambahkan -->
    
    
 
     <!-- Produk Terlaris -->
-    <h3 class="fw-bold text-success"><i class="bi bi-heart-fill text-danger"></i> Paling Laris</h3>
+    <h3 class="fw-bold text-success"><i class="bi bi-heart-fill text-danger"></i> FAVORIT</h3>
     <p class="lead"><small>Pilihan terbaik dari pelanggan kami tercinta</small></p>
 
     <div class="container mt-3 bg-success bg-opacity-50 py-2 px-2 py-lg-4 px-lg-4 rounded">
@@ -101,7 +101,7 @@
             Temukan produk kami lainnya berdasarkan <cite title="Source Title">kategori</cite> yang anda inginkan
         </figcaption>
     </figure>
-    <ul class="nav nav-pills my-3 justify-content-center">
+    <ul class="nav nav-pills my-3 justify-content-center"">
         <li class="nav-item">
             <a class="nav-link <?= (!isset($_GET['kategori']) || $_GET['kategori'] === 'semua') ? 'active' : '' ?>"
                 aria-current="page" href="?kategori=semua">Semua</a>
@@ -113,7 +113,7 @@
             </li>
         <?php } ?>
     </ul>
-    <div class="overflow-y-scroll overflow-x-hidden bg-primary bg-opacity-25 py-4 px-4 rounded"
+    <div class="overflow-y-scroll overflow-x-hidden bg-success bg-opacity-25 py-4 px-4 rounded"
         style="max-height: 600px;">
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
             <?php
@@ -131,7 +131,7 @@
                 </div>
             <?php } else
                 foreach ($produk as $p) { ?>
-                    <div class="col">
+                    <div class="col" >
                         <div class="card shadow-sm h-100">
                             <div class="card-body" data-bs-toggle="modal" data-bs-target="#produkModal"
                                 data-id="<?= htmlspecialchars($p['id']); ?>" data-name="<?= htmlspecialchars($p['nama']); ?>"
@@ -156,16 +156,9 @@
                                 <div class="card-footer">
                                     <div class="d-flex justify-content-end">
                                         <form action="" method="POST" style="display:inline-block;"
-                                            onsubmit="return confirm('Tambahkan item ini ke keranjang ?');">
+
                                             <input type="hidden" name="id_produk" value="<?= $p['id']; ?>">
-                                            <input type="hidden" value="addKeranjang" name="aksi">
-                                            <div class="input-group mb-2 justify-content-center">
-                                                <input type="number" class="form-control" name="jumlah" id="jumlah" min="0"
-                                                    value="0" required aria-describedby="button-addon2">
-                                                <button class="btn btn-sm btn-success" type="submit" id="button-addon2">
-                                                    <i class="bi bi-cart-plus-fill me-1"></i>Keranjang
-                                                </button>
-                                            </div>
+                                           
                                         </form>
                                     </div>
                                 </div>

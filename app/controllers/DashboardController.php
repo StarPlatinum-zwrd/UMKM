@@ -9,8 +9,7 @@ class DashboardController
 
     const VALID_MENU = [
         'shop' => ['produk', 'kategori', 'pelanggan'],
-        'transaksi' => ['keranjang', 'pesanan'],
-        'laporan' => ['produk', 'pesanan'],
+        'laporan' => ['produk'],
         'pengaturan' => ['pengguna'],
     ];
 
@@ -18,8 +17,6 @@ class DashboardController
         'produk' => ['tambah', 'edit', 'index', 'cetak'],
         'kategori' => ['tambah', 'edit', 'index'],
         'pelanggan' => ['tambah', 'edit', 'index'],
-        'keranjang' => ['index'],
-        'pesanan' => ['edit', 'index', 'cetak'],
         'pengguna' => ['tambah', 'edit', 'index'],
     ];
 

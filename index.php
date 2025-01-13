@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#712cf9">
-    <title>e-Commerce</title>
+    <title>Rindu Pokat</title>
     <link rel="icon" type="image/x-icon" href="<?= $logo ?>">
     <!-- bootstrap CDN CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Sweetalert2 Message -->
     <?php if (isset($_SESSION["message"]) && isset($_SESSION["icon_message"])) { ?>
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
                 Swal.fire({
                     title: '<?= ucfirst($_SESSION['icon_message']); ?>',
                     text: '<?= $_SESSION['message']; ?>',
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 })
             });
         </script>
-        <?php
+    <?php
         unset($_SESSION["icon_message"]);
         unset($_SESSION["message"]);
     } ?>
@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <img id="modal-product-photo" class="img-fluid" alt="Product Image">
+                            <img id="modal-product-photo" class="img-fluid" alt="silahkan login untuk melihat detail produk">
                         </div>
                         <div class="col-md-6">
                             <h2 id="modal-product-name" class="fw-bold fs-2"></h2>
@@ -110,32 +110,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                     </div>
                 </div>
-                <?php if (isset($_SESSION['user'])): ?>
-                    <div class="modal-footer">
-                        <div class="d-flex justify-content-end">
-                            <form action="" method="POST" style="display:inline-block;"
-                                onsubmit="return confirm('Tambahkan item ini ke keranjang ?');">
-                                <input type="hidden" name="id_produk" id="modal-product-id">
-                                <input type="hidden" value="addKeranjang" name="aksi">
-                                <div class="input-group mb-2 justify-content-center">
-                                    <label for="jumlah" class="input-group-text text-body-secondary">Jumlah dipesan
-                                        :</label>
-                                    <input type="number" class="form-control" name="jumlah" id="jumlah" min="0" value="0"
-                                        required aria-describedby="button-addon2">
-                                    <button class="btn btn-sm btn-success" type="submit" id="button-addon2">
-                                        <i class="bi bi-cart-plus-fill me-1"></i>Keranjang
-                                    </button>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end">
+                        <form action="" method="POST" style="display:inline-block;"
+                            <input type="hidden" name="id_produk" id="modal-product-id"></input>
+                            <?php if (isset($_SESSION['user'])): ?>
+                                <div class="social-icons-container">
+                                <span class="bg-success" style="margin-right: 20px; display: inline-block; cursor: pointer;">
+                                    <i class="bi bi-cart-plus-fill me-1"></i> Mulai Pembelian DI
+                                </span>
+                                    <a class="social-icon" href="https://gofood.co.id/banjarmasin/restaurant/rindu-pokat-banjarmasin-utara-sungaiandai-d76ef6b8-b294-41f7-84e4-d6b35fc56290" target="_blank">
+                                        <img class="socialIcon image-block" src="assets/images/gofood-icon.png" alt="Gofood" style="width:50px; height:auto; border:2px solid #ccc; margin-right: 20px; background: #ccc;">
+                                    </a>
+                                    <a class="social-icon" href="https://www.google.com" target="_blank">
+                                        <img class="socialIcon image-block" src="assets/images/images.png" alt="Shopeefood" style="width:50px; height:auto; border:2px solid #ccc; margin-left: 20px;">
+                                    </a>
                                 </div>
-                            </form>
-                        </div>
+                            <?php else: ?>
+
+                                <a href="login.php" class="bi bi-cart-plus-fill btn btn-success me-1">Login untuk melakukan pembelian</a>
+                            <?php endif ?>
+
+                        </form>
                     </div>
-                <?php endif ?>
+                </div>
             </div>
         </div>
     </div>
     <script>
         const produkModal = document.getElementById('produkModal');
-        produkModal.addEventListener('show.bs.modal', function (event) {
+        produkModal.addEventListener('show.bs.modal', function(event) {
             const card = event.relatedTarget;
             const id = card.getAttribute('data-id');
             const name = card.getAttribute('data-name');

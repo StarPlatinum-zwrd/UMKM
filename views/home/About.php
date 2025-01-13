@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,6 +92,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="responsive-container-block bigContainer">
     <div class="responsive-container-block Container">
@@ -98,12 +100,12 @@
         About Us
       </p>
       <p class="text-blk subHeading">
-      Rindu Pokat: Segelas Kenangan dalam Setiap Tegukan
-Nikmati perpaduan sempurna antara segarnya alpukat asli, manisnya gula aren, dan lembutnya susu kental. Setiap tegukan Rindu Pokat membawa rasa nyaman yang bikin susah lupa, seolah membawa kembali kehangatan momen istimewa.
+        Rindu Pokat: Segelas Kenangan dalam Setiap Tegukan
+        Nikmati perpaduan sempurna antara segarnya alpukat asli, manisnya gula aren, dan lembutnya susu kental. Setiap tegukan Rindu Pokat membawa rasa nyaman yang bikin susah lupa, seolah membawa kembali kehangatan momen istimewa.
       </p>
       <p class="text-blk subHeading">
-      Terhubung Dengan Kami
-Jangan ragu untuk menjelajahi lebih jauh tentang kami! Kunjungi halaman media sosial kami untuk informasi terbaru, promo menarik, dan cerita di balik layar:
+        Terhubung Dengan Kami
+        Jangan ragu untuk menjelajahi lebih jauh tentang kami! Kunjungi halaman media sosial kami untuk informasi terbaru, promo menarik, dan cerita di balik layar:
       </p>
       <div class="social-icons-container">
         <!-- Instagram -->
@@ -118,8 +120,13 @@ Jangan ragu untuk menjelajahi lebih jauh tentang kami! Kunjungi halaman media so
         <a class="social-icon" href="https://shopee.co.id" target="_blank">
           <img class="socialIcon image-block" src="https://img.icons8.com/color/24/000000/shopee.png" alt="Shopee">
         </a>
+        <!-- Maps -->
+        <a class="social-icon" href="https://maps.app.goo.gl/3y9jPoAUM8j75ynz7?g_st=ac" target="_blank">
+          <img class="socialIcon image-block" src="https://cdn-icons-png.flaticon.com/512/1865/1865269.png" alt="Maps">
+        </a>
       </div>
     </div>
   </div>
 </body>
+
 </html>

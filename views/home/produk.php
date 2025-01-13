@@ -5,7 +5,8 @@
 
     <div class="overflow-y-auto overflow-x-hidden bg-primary bg-opacity-25 py-4 px-4 rounded"
         style="max-height: 600px;">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center"></div>
             <?php
             $keyword = $_GET['search'] ?? null;
             $produks = $cHome->findProduk($keyword);
@@ -35,16 +36,9 @@
                             <div class="card-footer">
                                 <div class="d-flex justify-content-end">
                                     <form action="" method="POST" style="display:inline-block;"
-                                        onsubmit="return confirm('Tambahkan item ini ke keranjang ?');">
+                                       
                                         <input type="hidden" name="id_produk" id="modal-product-id">
-                                        <input type="hidden" value="addKeranjang" name="aksi">
-                                        <div class="input-group mb-2 justify-content-center">
-                                            <input type="number" class="form-control" name="jumlah" id="jumlah" min="0"
-                                                value="0" required aria-describedby="button-addon2">
-                                            <button class="btn btn-sm btn-success" type="submit" id="button-addon2">
-                                                <i class="bi bi-cart-plus-fill me-1"></i>Beli
-                                            </button>
-                                        </div>
+                                       
                                     </form>
                                 </div>
                             </div>

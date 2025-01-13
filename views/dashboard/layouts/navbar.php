@@ -11,21 +11,21 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
+        <!-- Navbar  -->
         <li class="nav-item">
-            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-                <i class="fas fa-search"></i>
+            <a class="nav-link" data-widget="navbar-" href="#" role="button">
+                <i class="fas fa-"></i>
             </a>
-            <div class="navbar-search-block">
+            <div class="navbar--block">
                 <form class="form-inline">
                     <div class="input-group input-group-sm">
-                        <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                            aria-label="Search">
+                        <input class="form-control form-control-navbar" type="" placeholder=""
+                            aria-label="">
                         <div class="input-group-append">
                             <button class="btn btn-navbar" type="submit">
-                                <i class="fas fa-search"></i>
+                                <i class="fas fa-"></i>
                             </button>
-                            <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                            <button class="btn btn-navbar" type="button" data-widget="navbar-">
                                 <i class="fas fa-times"></i>
                             </button>
                         </div>
@@ -84,7 +84,7 @@
 
                     <!-- A tag that acts as the logout button -->
                     <a href="#" onclick="this.closest('form').submit();" class="nav-link">
-                        <i class="fas fa-right-from-bracket mr-2"></i>Logout
+                        <i class="fas fa-right-from-bracket mr-5"></i>Logout
                     </a>
                 </form>
             </div>

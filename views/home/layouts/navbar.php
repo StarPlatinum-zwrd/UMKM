@@ -24,31 +24,31 @@
         </symbol>
     </svg>
 
-    <div class="px-3 py-2 text-bg-dark border-bottom">
+    <div class="px-3 py-2 border-bottom" style="background-color: #809D3C;">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="<?= getBaseUrl() ?>"
                     class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none text-uppercase fs-4">
                     <img src="<?= $logo ?>" alt="<?= $app_name ?> Logo" class="brand-image me-2" style="opacity: .8"
-                        width="40" height="32"> <?= $app_name ?>
+                        width="auto" height="70"> 
                 </a>
 
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                     <li>
-                        <a href="<?= getBaseUrl() ?>" class="nav-link text-white">
+                        <a href="<?= getBaseUrl() ?>" class="nav-link text-dark">
                             <i class="bi bi-house-fill d-block mx-auto mb-1 text-center"></i>
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="?menu=produk" class="nav-link text-white">
+                        <a href="?menu=produk" class="nav-link text-dark">
                             <i class="bi bi-grid-fill d-block mx-auto mb-1 text-center"></i>
                             Products
                         </a>
                     </li>
                     <li>
-                        <a href="?menu=About" class="nav-link text-white">
-                            <i class="bi bi-grid-fill d-block mx-auto mb-1 text-center"></i>
+                        <a href="?menu=About" class="nav-link text-dark">
+                            <i class="bi bi-file-person-fill d-block mx-auto mb-1 text-center"></i>
                             About Us
                         </a>
                     </li>
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="px-3 py-2 border-bottom mb-3">
+    <div class="px-3 py-2 border-bottom mb-3" style="background-color: lightsteelblue;">
         <div class="container d-flex flex-wrap justify-content-center">
             <form action="?menu=produk" method="GET" class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
                 <input type="hidden" value="produk" name="menu">
@@ -86,51 +86,6 @@
                         </button>
                     </form>
                 <?php endif; ?>
-                <button class="btn btn-bd-light dropdown-toggle align-items-center" id="bd-theme" type="button"
-                    aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
-                    <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-                        <use href="#sun-fill"></use>
-                    </svg>
-                    <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center active"
-                            data-bs-theme-value="light" aria-pressed="true">
-                            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                                <use href="#sun-fill"></use>
-                            </svg>
-                            Light
-                            <svg class="bi ms-auto d-none" width="1em" height="1em">
-                                <use href="#check2"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-                            aria-pressed="false">
-                            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                                <use href="#moon-stars-fill"></use>
-                            </svg>
-                            Dark
-                            <svg class="bi ms-auto d-none" width="1em" height="1em">
-                                <use href="#check2"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
-                            aria-pressed="false">
-                            <svg class="bi me-2 opacity-50" width="1em" height="1em">
-                                <use href="#circle-half"></use>
-                            </svg>
-                            Auto
-                            <svg class="bi ms-auto d-none" width="1em" height="1em">
-                                <use href="#check2"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
